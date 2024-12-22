@@ -14,7 +14,7 @@ const (
 	MONGODB_DB  = "MONGODB_DB"
 )
 
-func NewMongoDBConnetion(ctx context.Context) (*mongo.Database, error) {
+func NewMongoDBConnection(ctx context.Context) (*mongo.Database, error) {
 	mongoURL := os.Getenv(MONGODB_URL)
 	mongoDatabase := os.Getenv(MONGODB_DB)
 
